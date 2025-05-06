@@ -4,7 +4,7 @@ package edu.estatuas;
  * Hello world!
  *
  */
-public class App
+public class  App
 {
     public static void main( String[] args )
     {
@@ -22,7 +22,7 @@ public class App
          * Lee los precios de los items en la imagen
          * del menu proporcionada.
          */
-    /*
+
         RetailPrice.init_prices();
 
         // formatea la salida de cada entrada del diccionario como prefieras
