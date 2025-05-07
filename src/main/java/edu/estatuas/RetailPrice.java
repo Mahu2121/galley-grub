@@ -1,10 +1,10 @@
 package edu.estatuas;
 
+import javax.swing.plaf.ProgressBarUI;
 import java.util.HashMap;
 import java.util.Map;
 
 public class RetailPrice {
-            /*(extra,precio)*/
     private static HashMap<String,Double> prices;
 
     RetailPrice(){
@@ -22,6 +22,10 @@ public class RetailPrice {
         for(Map.Entry<String,Double> entry : prices.entrySet()) {
             System.out.println(entry.getKey() + "=" + entry.getValue());
         }
+    }
+
+    public static void display(Product product){
+        System.out.println(product);
     }
 
 
