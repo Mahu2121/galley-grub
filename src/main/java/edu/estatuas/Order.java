@@ -25,6 +25,11 @@ public class Order implements Comanda {
     }
 
     @Override
+    public void addItem(String item1, double price, String item2) {
+        items.add(new Item(item1, price, item2));
+    }
+
+    @Override
     public void display() {
         System.out.println("\n\t --- ORDER ---");
         for (Item item : items) {

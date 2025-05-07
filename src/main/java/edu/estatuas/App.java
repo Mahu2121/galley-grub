@@ -140,7 +140,7 @@ public class  App
          * y realiza una comanda cargada
          * de extras.
          */
-/*
+
         order = new Order();
 
         order.addItem("Krabby Patty", 1.25, "cheese");
