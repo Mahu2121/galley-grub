@@ -101,8 +101,9 @@ public class  App
          * la app calcula el importe total de la comanda
          * y lo muestra en pantalla.
          */
-/*
+
         Ticket receipt = new Receipt(order);
+
         receipt.total();
         receipt.print();
 
