@@ -1,5 +1,7 @@
 package edu.estatuas;
 
+import static edu.estatuas.RetailPrice.display;
+
 /**
  * Hello world!
  *
@@ -27,7 +29,7 @@ public class  App
 
         // formatea la salida de cada entrada del diccionario como prefieras
         System.out.print("\n\t --- PRICES ---  \n");
-        RetailPrice.display();
+        display();
 
         /**
          * Crea los items del menu
@@ -43,7 +45,7 @@ public class  App
          * equals y hascode para comparar objetos
          * de tipo Item.
          */
-    /*
+
         System.out.print("\n\t --- GALLEY GRUB ---  \n");
 
         Product patty = new Item("Krabby Patty", 1.25);
@@ -83,7 +85,7 @@ public class  App
          * te devuelve la misma referencia al objeto que has creado antes,
          * ahorrando asi memoria.
          */
-/*
+
         Comanda order = new Order();
 
         order.addItem("Krabby Patty", 1.25);

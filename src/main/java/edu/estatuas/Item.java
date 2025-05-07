@@ -16,10 +16,24 @@ public class Item implements Product{
         this.price = price;
         this.extra = extra;
     }
+    @Override
+    public String name(){
+        return name;
+    }
+
+    @Override
+    public String extra(){
+        return extra;
+    }
+
+    @Override
+    public Double price(){
+        return price;
+    }
 
     @Override
     public String toString() {
-        return name + (extra != null ? "w/ " + extra : "") + ".... " + String.format("%.2f",price).replace(".", ",") + "$ ";
+        return name() + (extra() != null ? "w/ " + extra() : "") + ".... " + String.format("%.2f",price()).replace(".", ",") + "$ ";
     }
 
 }

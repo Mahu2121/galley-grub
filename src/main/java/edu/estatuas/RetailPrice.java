@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class RetailPrice {
     private static HashMap<String,Double> prices;
+    private static HashMap<String,Double> OrderPrices;
 
     RetailPrice(){
     }
