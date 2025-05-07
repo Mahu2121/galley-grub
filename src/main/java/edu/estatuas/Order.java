@@ -13,6 +13,11 @@ public class Order implements Comanda {
     }
 
     @Override
+    public void updateTotal(Double total) {
+        this.total = total;
+    }
+
+    @Override
     public List<Item> getItems() {
         return items;
     }

@@ -1,12 +1,10 @@
 package edu.estatuas;
 
-import javax.swing.plaf.ProgressBarUI;
 import java.util.HashMap;
 import java.util.Map;
 
 public class RetailPrice {
     private static HashMap<String,Double> prices;
-    private static HashMap<String,Double> OrderPrices;
 
     RetailPrice(){
     }
@@ -37,6 +35,8 @@ public class RetailPrice {
             }
         } return price;
     }
+
+
 
 
 

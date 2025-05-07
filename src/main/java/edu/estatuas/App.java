@@ -1,5 +1,7 @@
 package edu.estatuas;
 
+import edu.estatuas.extras.*;
+
 import static edu.estatuas.RetailPrice.display;
 
 /**
@@ -172,7 +174,7 @@ public class  App
          *
          * El precio total de la comanda se guarda en Order.
          */
-/*
+
         Extra regular = new Regular(); // suma el precio base
         Extra cheese = new CheeseExtra(); // suma el precio del extra cheese
         Extra sauce = new SauceExtra(); // suma el precio de sauce
@@ -187,7 +189,7 @@ public class  App
          * la app calcula el importe total de la comanda
          * y lo muestra en pantalla.
          */
-/*
+
         System.out.print("\n\t --- PRINTIG RECEIPT BIPBIPBIP ---  \n");
 
         Ticket receiptExtra = new Receipt(order);
@@ -196,10 +198,10 @@ public class  App
         receiptExtra.total();
         receiptExtra.print();
     }
-
+/*
     public static void display(Product item) {
         System.out.print("\t" + item.toString() + "\n");
+    }
 
  */
-    }
 }

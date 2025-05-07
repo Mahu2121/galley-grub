@@ -1,11 +1,18 @@
 package edu.estatuas;
 
+import edu.estatuas.extras.Extra;
+
 public class Receipt implements Ticket{
     private Double total;
     private Comanda order;
 
     Receipt(Comanda order){
     this.order = order;
+    }
+
+    @Override
+    public void setChain(Extra extra) {
+        extra.sumExtra(order);
     }
 
     @Override

@@ -7,4 +7,5 @@ public interface Comanda{
     void display();
     List<Item> getItems();
     void addItem(String item1, double price, String item2);
+    void updateTotal(Double total);
 }
