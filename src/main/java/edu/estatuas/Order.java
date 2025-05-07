@@ -1,11 +1,7 @@
 package edu.estatuas;
 
-
-import org.assertj.core.internal.cglib.proxy.Factory;
-
 import java.util.ArrayList;
-
-import static edu.estatuas.ItemFactory.getItem;
+import java.util.List;
 
 public class Order implements Comanda {
 
@@ -16,7 +12,8 @@ public class Order implements Comanda {
         items = new ArrayList<>();
     }
 
-    public ArrayList<Item> getItems() {
+    @Override
+    public List<Item> getItems() {
         return items;
     }
 
@@ -29,12 +26,10 @@ public class Order implements Comanda {
 
     @Override
     public void display() {
-        System.out.println(" ---ORDER--- " + "\n" + getItems());
-
+        System.out.println("\n\t --- ORDER ---");
+        for (Item item : items) {
+            System.out.println(item);
+        }
     }
-
-
-
-
 
 }
