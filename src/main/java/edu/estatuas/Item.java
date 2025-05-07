@@ -36,7 +36,7 @@ public class Item implements Product{
         return name() + (extra() != null ? " w/ " + extra() : "")
         + ".... "
         + String.format("%.2f",price()).replace(".", ",") + "$"
-        + (extra() != null ? "+" + String.format("%.2f",RetailPrice.contains(extra())).replace(".",",") + "$" : "");
+        + (extra() != null ? " + " + String.format("%.2f",RetailPrice.contains(extra())).replace(".",",") + "$" : "");
     }
 
 }
