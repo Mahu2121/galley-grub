@@ -121,7 +121,7 @@ public class  App
          * con el cargo extra
          * pues eso lo haremos con otro componente.
          */
-/*
+
         System.out.print("\n\t --- GALLEY GRUB ---  \n");
 
         patty = new Item("Krabby Patty", 1.25, "cheese");
