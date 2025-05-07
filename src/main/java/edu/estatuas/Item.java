@@ -33,7 +33,7 @@ public class Item implements Product{
 
     @Override
     public String toString() {
-        return name() + (extra() != null ? "w/ " + extra() : "") + ".... " + String.format("%.2f",price()).replace(".", ",") + "$ ";
+        return name() + (extra() != null ? "w/ " + extra() : "") + ".... " + String.format("%.2f",price()).replace(".", ",") + "$";
     }
 
 }
