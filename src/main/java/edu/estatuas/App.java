@@ -1,6 +1,12 @@
 package edu.estatuas;
 
+import edu.estatuas.comanda.Comanda;
+import edu.estatuas.comanda.Order;
+import edu.estatuas.product.Item;
+import edu.estatuas.product.Product;
 import edu.estatuas.extras.*;
+import edu.estatuas.ticket.Receipt;
+import edu.estatuas.ticket.Ticket;
 
 import static edu.estatuas.RetailPrice.display;
 
@@ -194,6 +200,7 @@ public class  App
 
         Ticket receiptExtra = new Receipt(order);
         receiptExtra.setChain(regular);
+
 
         receiptExtra.total();
         receiptExtra.print();
