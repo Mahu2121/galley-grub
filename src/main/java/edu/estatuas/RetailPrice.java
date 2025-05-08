@@ -1,5 +1,7 @@
 package edu.estatuas;
 
+import edu.estatuas.product.Product;
+
 import java.util.HashMap;
 import java.util.Map;
 

@@ -1,5 +1,7 @@
 package edu.estatuas;
 
+import edu.estatuas.product.Item;
+
 public class ItemFactory {
 
     ItemFactory(){
