@@ -1,20 +1,23 @@
-package edu.estatuas;
+package edu.estatuas.comanda;
+
+import edu.estatuas.ItemFactory;
+import edu.estatuas.product.Item;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Order implements Comanda {
 
-    private Double total;
+    private Double total = 0.0;
     private ArrayList<Item> items;
 
-    Order() {
+    public Order() {
         items = new ArrayList<>();
     }
 
     @Override
     public void updateTotal(Double total) {
-        this.total = total;
+        total = this.total + total;
     }
 
     @Override

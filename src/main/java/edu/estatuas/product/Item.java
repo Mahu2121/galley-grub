@@ -1,17 +1,19 @@
-package edu.estatuas;
+package edu.estatuas.product;
 
-public class Item implements Product{
+import edu.estatuas.RetailPrice;
+
+public class Item implements Product {
 
     private String name;
     private Double price;
     private String extra;
 
-    Item(String name, Double price) {
+    public Item(String name, Double price) {
         this.name = name;
         this.price = price;
     }
 
-    Item(String name, Double price, String extra) {
+    public Item(String name, Double price, String extra) {
         this.name = name;
         this.price = price;
         this.extra = extra;
@@ -38,7 +40,7 @@ public class Item implements Product{
         return name() + (extra() != null ? " w/ " + extra() : "")
         + ".... "
         + String.format("%.2f",price()).replace(".", ",") + "$"
-        + (extra() != null ? " + " + String.format("%.2f",RetailPrice.contains(extra())).replace(".",",") + "$" : "");
+        + (extra() != null ? " + " + String.format("%.2f", RetailPrice.contains(extra())).replace(".",",") + "$" : "");
     }
 
 }
