@@ -1,7 +1,8 @@
 package edu.estatuas.extras;
 
-import edu.estatuas.Comanda;
-import edu.estatuas.Item;
+import edu.estatuas.comanda.Comanda;
+import edu.estatuas.product.Item;
+import edu.estatuas.RetailPrice;
 
 
 public class CheeseExtra extends Extra {
@@ -13,7 +14,7 @@ public class CheeseExtra extends Extra {
         double price = 0;
         for (Item item : comanda.getItems()) {
             if (item.extra().equals(Extra.CHEESE)) {
-                price += item.price();
+                price += item.price() + RetailPrice.contains(item.extra());
             }
         } comanda.updateTotal(price);
     }

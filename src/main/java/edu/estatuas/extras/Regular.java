@@ -1,7 +1,7 @@
 package edu.estatuas.extras;
 
-import edu.estatuas.Comanda;
-import edu.estatuas.Item;
+import edu.estatuas.comanda.Comanda;
+import edu.estatuas.product.Item;
 
 public class Regular extends Extra{
 
@@ -12,8 +12,10 @@ public class Regular extends Extra{
         for (Item item : comanda.getItems()) {
             if (item.extra() == null) {
                 price += item.price();
+
             }
         } comanda.updateTotal(price);
+
     }
 
 }
