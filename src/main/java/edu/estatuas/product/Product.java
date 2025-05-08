@@ -1,4 +1,4 @@
-package edu.estatuas;
+package edu.estatuas.product;
 
 public interface Product {
     String name();

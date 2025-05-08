@@ -1,6 +1,6 @@
 package edu.estatuas.extras;
 
-import edu.estatuas.Comanda;
+import edu.estatuas.comanda.Comanda;
 
 import java.util.Optional;
 

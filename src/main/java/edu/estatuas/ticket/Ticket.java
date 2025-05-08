@@ -1,4 +1,4 @@
-package edu.estatuas;
+package edu.estatuas.ticket;
 
 import edu.estatuas.extras.Extra;
 

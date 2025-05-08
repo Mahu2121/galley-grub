@@ -1,4 +1,6 @@
-package edu.estatuas;
+package edu.estatuas.comanda;
+
+import edu.estatuas.product.Item;
 
 import java.util.List;
 
