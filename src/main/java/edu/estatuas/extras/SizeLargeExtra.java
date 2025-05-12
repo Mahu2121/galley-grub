@@ -12,9 +12,10 @@ public class SizeLargeExtra extends Extra{
         double price = 0;
         for (Item item : comanda.getItems()) {
             if (item.extra().equals(Extra.SIZE_LARGE)) {
-                price += item.price() + RetailPrice.contains(item.extra());
+                price += RetailPrice.contains(item.extra());
             }
         } comanda.updateTotal(price);
+        this.nextExtra.ifPresent(chain -> chain.sumExtra(comanda));
     }
 
 

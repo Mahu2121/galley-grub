@@ -13,10 +13,11 @@ public class CheeseExtra extends Extra {
     public void sumExtra(Comanda comanda){
         double price = 0;
         for (Item item : comanda.getItems()) {
-            if (item.extra().equals(Extra.CHEESE)) {
-                price += item.price() + RetailPrice.contains(item.extra());
+            if (item.extra() != null && item.extra().equals(Extra.CHEESE)) {
+                price += RetailPrice.contains(item.extra());
             }
         } comanda.updateTotal(price);
+        this.nextExtra.ifPresent(chain -> chain.sumExtra(comanda));
     }
 
 

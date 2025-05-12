@@ -11,8 +11,8 @@ public class SauceExtra extends Extra {
     public void sumExtra(Comanda comanda){
         double price = 0;
         for (Item item : comanda.getItems()) {
-            if (item.extra().equals(Extra.SAUCE)) {
-                price += item.price() + RetailPrice.contains(item.extra());
+            if (item.extra() != null && item.extra().equals(Extra.SAUCE)) {
+                price += RetailPrice.contains(item.extra());
             }
         } comanda.updateTotal(price);
     }
