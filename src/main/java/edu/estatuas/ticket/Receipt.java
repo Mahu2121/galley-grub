@@ -22,7 +22,7 @@ public class Receipt implements Ticket {
         double total = 0;
         for (Item item  : order.getItems()) {
             total += item.price();
-        } this.total = total;
+        } this.total = total + order.getTotal();
         return total;
     }
 
