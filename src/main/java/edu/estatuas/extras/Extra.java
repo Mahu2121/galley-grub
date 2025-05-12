@@ -9,12 +9,12 @@ public abstract class Extra {
     public static final String SAUCE = "sauce";
     public static final String SIZE_LARGE = "large";
     private String extraProduct;
-    private Optional<Extra> nextExtra;
+    Optional<Extra> nextExtra = Optional.empty();
 
     Extra() {}
 
     public void setNextExtra(Extra nextExtra) {
-        this.nextExtra = Optional.ofNullable(nextExtra);
+        this.nextExtra = Optional.of(nextExtra);
     }
 
     public abstract void sumExtra(Comanda comanda);
