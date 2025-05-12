@@ -10,4 +10,5 @@ public interface Comanda{
     List<Item> getItems();
     void addItem(String item1, double price, String item2);
     void updateTotal(Double total);
+    double getTotal();
 }
