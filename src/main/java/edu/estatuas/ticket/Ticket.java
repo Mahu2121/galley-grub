@@ -6,5 +6,6 @@ public interface Ticket {
     Double total();
     void print();
     void setChain(Extra extra);
-    void sumExtrasCharge();
+
+
 }
